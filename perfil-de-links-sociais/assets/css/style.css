@@ -31,7 +31,7 @@ main {
     border-radius: 15px;
     max-width: 600px;
     min-width: 300px;
-    margin: 40px auto 0;
+    margin: 40px auto 30px;
     padding: 5px;
     color: #fff;
     font-family: var(--font1);
@@ -51,7 +51,7 @@ header img {
 }
 
 header img:hover{
-    transform: scale(1.25);                                             
+    transform: scale(1.25);                                              
 }
 
 header #nome {
@@ -95,6 +95,10 @@ nav li:hover {
     box-shadow: 0 0 10px #BF9A2C;
 }
 
+nav li.inativo{
+    cursor: not-allowed;
+}
+
 nav li a {
     text-decoration: none;
     color: #fff;
@@ -102,7 +106,35 @@ nav li a {
     letter-spacing: 2px;
 }
 
+nav li.inativo a {
+    cursor: not-allowed;
+}
+
 nav li a:hover {
     color: var(--grey2);
     font-weight: 700;
+}
+
+footer {
+    background-color: var(--grey2);
+    box-shadow: 0 0 10px #BF9A2C;
+    border-radius: 10px;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 15px;
+    margin: 0 auto;
+
+    color: #fff;
+    text-align: center;
+}
+
+footer p a {
+    color: var(--grey0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer p a:hover {
+    color: var(--green);
+    text-decoration: underline;
 }
