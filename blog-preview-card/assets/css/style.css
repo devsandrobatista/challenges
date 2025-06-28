@@ -35,6 +35,7 @@ main {
 #blog-header img {
     display: block;
     width: 100%;
+    box-shadow: 0 0 5px var(--shadow-color);
     border-radius: 10px;
     margin: auto;
 }
@@ -57,6 +58,13 @@ article h1 {
 article h1 abbr {
     text-decoration: none;
     font-weight: 900;
+    cursor: help;
+}
+
+article h1 abbr:hover {
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px var(--background-color);
+    text-decoration: underline;
 }
 
 article p {
@@ -79,7 +87,7 @@ article p {
 }
 
 #blog-perfil img:hover {
-    box-shadow: 0 0 10px var(--shadow-color);
+    box-shadow: 0 0 8px var(--background-color);
     transform: scale(1.4);
 }
 
@@ -90,7 +98,7 @@ article p {
     left: 10px;
 
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #footer {
