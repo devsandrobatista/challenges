@@ -29,10 +29,11 @@ main {
     background-color: var(--grey2);
     box-shadow: 1px 1px 10px #BF9A2C;
     border-radius: 15px;
-    max-width: 600px;
+    width: 90%;
+    max-width: 430px;
     min-width: 300px;
     margin: 40px auto 30px;
-    padding: 5px;
+    padding: 5px 20px;
     color: #fff;
     font-family: var(--font1);
     text-align: center;
@@ -47,7 +48,7 @@ header img {
     box-shadow: 1px 1px 10px #BF9A2C;
     border-radius: 50%;
     transition: linear 0.3s;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 header img:hover{
@@ -74,7 +75,7 @@ header #localizacao:hover {
 main #cargo {
     margin-bottom: 25px;
 }
-nav li {
+div li {
     background-color: var(--grey1);
     box-shadow: 0 0 3px #BF9A2C;
     border-radius: 10px;
@@ -82,35 +83,38 @@ nav li {
     padding: 15px;
     list-style: none;
     margin: 15px auto;
+
+    transition: linear 0.3s;
 }
 
-nav li:last-child {
+div li:last-child {
     margin-bottom: 30px;
 }
 
-nav li:hover {
-    transform: scale(1.15);
+div li:hover {
+    transform: scale(1.05);
     transition: .3s;
     background-color: var(--green);
     box-shadow: 0 0 10px #BF9A2C;
 }
 
-nav li.inativo{
+div li.inativo{
+    filter: grayscale();
     cursor: not-allowed;
 }
 
-nav li a {
+div li a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
     letter-spacing: 2px;
 }
 
-nav li.inativo a {
+div li.inativo a {
     cursor: not-allowed;
 }
 
-nav li a:hover {
+div li a:hover {
     color: var(--grey2);
     font-weight: 700;
 }
@@ -119,13 +123,15 @@ footer {
     background-color: var(--grey2);
     box-shadow: 0 0 10px #BF9A2C;
     border-radius: 10px;
-    max-width: 600px;
+    width: 90%;
+    max-width: 430px;
     min-width: 300px;
     padding: 15px;
     margin: 0 auto;
 
     color: #fff;
     text-align: center;
+    font-size: 0.75em;
 }
 
 footer p a {
